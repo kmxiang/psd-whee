@@ -1,21 +1,821 @@
 <!doctype html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<html><head>
 
-  <title>MNA</title>
-  <meta name="description" content="MNA">
-  <meta name="author" content="Katherine Xiang">
+<meta charset="utf-8">
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<title>MNA</title>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <meta name="keywords" content="">
+
+    <meta name="description" content="">
+
+    <meta name="author" content="lifeblood">
+
+    <meta http-equiv="content-language" content="en" />
+
+
+   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/661758/7294952/css/fonts.css" />
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+
+    <link href="css/input.css" rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="css/layout--.css" rel="stylesheet" type="text/css">
+
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    
+
+    <script src="js/jquery.js"></script>  
+
+    <script src="js/jquery.imgpreload.min.js"></script>
+
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <script src="js/home.js"></script>
+
+    <script src="js/init.js"></script> 
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74781804-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>    
+
+   	
+
+    
+
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--[if lt IE 9]>
+
+	<script type="text/javascript" src="jsskrollr.ie.min.js"></script>
+
+	<![endif]-->
+
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+    <!--[if lt IE 9]>
+
+      <script src="//cdnjs.bootcss.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+
+    <![endif]-->
+
+
 </head>
 
-<body background="images/1.jpg">
+<body>
+
+    <div id="preload">
+
+    	<div id="preload-img">
+
+        	<div id="preload-img-1"><img src="images/h2.png"></div>
+
+        	<div id="preload-img-2"><img src="images/h2.png"></div>
+
+        	<div id="preload-img-3"><img src="images/h2.png"></div>
+
+        	<div id="preload-img-4"><img src="images/h2.png"></div>
+
+        </div>
+
+        <div id="preload-txt" class="text-center">0%</div>
+
+    </div>    
+
+    <div id="preload-bg">
+
+    	<div class="bg" ><img src="images/cover-bg.jpg"></div>
+
+    </div>
+
+    <div id="btns" class="btns"></div>
+
+    <div id="speed"><div>Speed</div></div>
+
+    <div id="state-bar"><div></div></div>
+
+    
+
+    <!-- Page Nav -->
+
+    <div id="pagenav">
+
+    	<ul class="ul-no-style">
+
+        	<li data-t="0" class="active" ><span>1</span></li>
+
+        	<li data-t="1200"><span>2</span></li>
+
+        	<li data-t="7200"><span>3</span></li>
+
+        	<li data-t="13200"><span>4</span></li>
+
+        	<li data-t="18200"><span>5</span></li>
+
+        	<li data-t="22700"><span>6</span></li>
+
+        	<li data-t="27700"><span>7</span></li>
+
+        	<li data-t="32700"><span>8</span></li>
+
+        	<li data-t="38200"><span>9</span></li>
+
+        	<li data-t="44700"><span>10</span></li>
+
+        	<li data-t="49200"><span>11</span></li>
+
+        	<li data-t="53200"><span>12</span></li>
+
+        	<li data-t="58300"><span>13</span></li>
+
+        </ul>
+
+    </div>
+
+    
+
+	<!-- Home -->
+
+    <div id="footer"><a href="http://lifebloodagency.com"><img src="images/footer.png"></a></div>
+
+	<section id="main" class="opacity-0" data-0="top:0" data-1000="top:0;" data-1500="display:block;" data-2000="display:none;"> 
+
+    	<div class="bg">
+
+        	<img src="images/cover-bg.jpg">
+
+        	
+
+            <div id="round" data-0="left:60%;" data-500="opacity:1;" data-800="opacity:0;">
+
+                <div id="round-number" data-left="6.777%"  data-0="left:6.777%;" data-400="left: 100%"><img src="images/451.png" class="img-full"></div>
+
+            </div>
+
+        </div>
+
+    	<div id="stars"></div>
+
+        <div id="footer-left-txt" data-300="opacity:1;" data-1000="opacity:0;" ><img src="images/footer-left-txt.png"></div>
+
+        
+
+        <div id="title-1" data-left="26.315%" data-0="left:26.315%;" data-1000="left: 100%"><img src="images/h2.png"></div>
+
+        <div id="title-2" data-0="left:26.315%;" data-1000="left: -150%"><img src="images/h2.png"></div>
+
+        <div id="title-3" data-0="left:26.315%;" data-1000="left: 200%"><img src="images/h2.png"></div>
+
+             
+
+        <!-- 16 Covers for footer text-->
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>
+
+        <div class="cover-thumb"></div>        
+
+        <!-- Top Covers -->
+
+        <div class="cover-thumb"></div>        
+
+        <div class="cover-thumb"></div>        
+
+        <div class="cover-thumb"></div>        
+
+        <div class="cover-thumb"></div>        
+
+        <div class="cover-thumb"></div>        
+
+        <div class="cover-thumb"></div>        
+
+    </section>
+
+    
+
+    <!-- Page 1 -->
+
+    <div id="p1" class="page hidden" data-0="opacity:0;display:none;" data-1000="opacity:0;top:0; display:block;" data-1500="opacity:1; top:-3px;"  data-7500="display:block;" data-8000="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/cover-bg-1.jpg">
+
+        </div>
+
+        <div class="bg bg-cover">
+
+        	<div class="star-2 star-animate-3" style="left:75%; top:20%;"></div>
+
+        	<div class="star-1 star-animate-2" style="left:75.2%; top:22%;"></div>
+
+        	<div class="star-3 star-animate-1" style="left:74.6%; top:24.5%;"></div>
+
+        	<div class="star-4 star-animate-6" style="left:74.4%; top:23.8%;"></div>
+
+        	<div class="star-1 star-animate-4" style="left:75.4%; top:29%;"></div>
+
+        	<div class="star-3 star-animate-5" style="left:73.5%; top:33%;"></div>
+
+        	<div class="star-2 star-animate-2" style="left:74.7%; top:35%;"></div>
+
+        	<div class="star-4 star-animate-1" style="left:75.1%; top:36%;"></div>
+
+        	<div class="star-3 star-animate-5" style="left:78.5%; top:39%;"></div>
+
+        	<div class="star-2 star-animate-2" style="left:78.2%; top:40%;"></div>
+
+        	<div class="star-4 star-animate-3" style="left:79%; top:45%;"></div>
+
+            
+
+            <div class="star-2 star-animate-3" style="left:68.5%; top:25%;"></div>
+
+        	<div class="star-1 star-animate-2" style="left:68.7%; top:18%;"></div>
+
+        	<div class="star-1 star-animate-2" style="left:68.2%; top:22%;"></div>
+
+        	<div class="star-3 star-animate-1" style="left:69.2%; top:34.5%;"></div>
+
+        	<div class="star-4 star-animate-6" style="left:71.4%; top:33%;"></div>
+
+        	<div class="star-1 star-animate-4" style="left:68%; top:34%;"></div>
+
+        </div>
+
+        <div id="page-1-txt" class="txt" data-height="930" data-w="51.78%">
+
+        	<div class="txt-inner" data-0="top:100%" data-1500="top:100%" data-7000="">
+
+                The world is shaped like the kanji for umbrella, only written so poorly, like my handwriting, that all the parts are out of proportion.<br><br>
+
+                My father would be greatly ashamed at the childish way I still form my characters. Indeed, I can barely write many of them anymore. My formal schooling back in Japan ceased when I was only eight.<br><br>
+
+                Yet for present purposes, this badly drawn character will do.<br><br>
+
+                The canopy up there is the solar sail. Even that distorted kanji can only give you a hint of its vast size. A hundred times thinner than rice paper, the spinning disc fans out a thousand kilometers into space like a giant kite intent on catching every passing photon. It literally blocks out the sky.<br><br>
+
+                Beneath it dangles a long cable of carbon nanotubes a hundred kilometers long: strong, light, and flexible. At the end of the cable hangs the heart of the Hopeful, the habitat module, a five-hundred-meter-tall cylinder into which all the 1,021 inhabitants of the world are packed.<br><br>
+
+                The light from the sun pushes against the sail, propelling us on an ever widening, ever accelerating, spiraling orbit away from it. The acceleration pins all of us against the decks, gives everything weight.<br><br>
+
+                Our trajectory takes us toward a star called 61 Virginis. You can’t see it now because it is behind the canopy of the solar sail. The Hopeful will get there in about three hundred years, more or less. With luck, my great-great-great —- I calculated how many “greats” I needed once, but I don’t remember now -- grandchildren will see it.<br><br>
+
+                There are no windows in the habitat module, no casual view of the stars streaming past. Most people don’t care, having grown bored of seeing the stars long ago. But I like looking through the cameras mounted on the bottom of the ship so that I can gaze at this view of the receding, reddish glow of our sun, our past.
+
+            </div>
+
+        </div>    
+
+    </div>
+
+    
+
+    <!-- Page 2 -->
+
+    <div id="page-2" class="page hidden" data-0="opacity:0;display:none;top:0;" data-5000="opacity:0;display:block;" data-7500="opacity:1;top:-3px;" data-13500="display:none;">    	
+
+          <div class="static-bg  page2-bg" >
+
+              <img src="images/page2-1.jpg" class="img-full">
+
+          </div>  	
+
+          <div class="static-bg  page2-bg" data-8500="margin-top:-300px" data-12000="margin-top:0px;">
+
+          </div>
+
+          <div class="static-bg bg-cover">
+
+          </div>
+
+          <div id="page-2-txt" class="txt" data-height="930" data-w="51.78%">
+
+              <div class="static-txt">
+
+                The world is shaped like the kanji for umbrella, only written so poorly, like my handwriting, that all the parts are out of proportion.<br><br>
+
+                My father would be greatly ashamed at the childish way I still form my characters. Indeed, I can barely write many of them anymore. My formal schooling back in Japan ceased when I was only eight.<br><br>
+
+                Yet for present purposes, this badly drawn character will do.<br><br>
+
+                The canopy up there is the solar sail. Even that distorted kanji can only give you a hint of its vast size. A hundred times thinner than rice paper, the spinning disc fans out a thousand kilometers into space like a giant kite intent on catching every passing photon. It literally blocks out the sky.<br><br>
+
+                Beneath it dangles a long cable of carbon nanotubes a hundred kilometers long: strong, light, and flexible. At the end of the cable hangs the heart of the Hopeful, the habitat module, a five-hundred-meter-tall cylinder into which all the 1,021 inhabitants of the world are packed.<br><br>
+
+                The light from the sun pushes against the sail, propelling us on an ever widening, ever accelerating, spiraling orbit away from it. The acceleration pins all of us against the decks, gives everything weight.<br><br>
+
+                Our trajectory takes us toward a star called 61 Virginis. You can’t see it now because it is behind the canopy of the solar sail. The Hopeful will get there in about three hundred years, more or less. With luck, my great-great-great —- I calculated how many “greats” I needed once, but I don’t remember now -- grandchildren will see it.<br><br>
+
+                There are no windows in the habitat module, no casual view of the stars streaming past. Most people don’t care, having grown bored of seeing the stars long ago. But I like looking through the cameras mounted on the bottom of the ship so that I can gaze at this view of the receding, reddish glow of our sun, our past.
+
+              </div>
+
+          </div>
+
+    </div>    
+
+    
+
+    <!-- Page 3 -->
+
+    <div id="page-3" class="page hidden" data-0="opacity:0;display:none" data-13000="opacity:0;display:block" data-13500="display:block;opacity:1"  data-18000="display:block;" data-18500="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page3.jpg">
+
+        </div>
+
+        <div id="page3-txt" class="txt-format" data-13500="top:0px;" data-17500="">
+
+            He stopped for breath, on his way to the river, to peer through dimly lit windows of wakened houses, and saw the silhouettes of people inside watching their parlourwalls and there on the walls the Mechanical Hound, a breath of neon vapour, spidered along, here and gone, here and gone! Now at Elm Terrace, Lincoln, Oak, Park, and up the alley toward Faber's house.<br><br>
+
+            Go past, thought Montag, <br>
+
+            don't stop,<br> 
+
+            go on, <br>
+
+            don't <br>
+
+            turn in!
+
+        </div>	
+
+    </div>
+
+    
+
+    
+
+    <!-- Page 4 -->
+
+    <div id="page-4" class="page hidden" data-0="opacity:0;display:none" data-18000="opacity:0;display:block" data-18500="display:block;opacity:1"  data-22500="display:block;" data-23500="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page4.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page4-cover.png">
+
+        </div>
+
+        <div id="page4-txt" class="txt-format" data-18500="top:0px;" data-22500="">
+
+           On the parlour wall, Faber's house, with its sprinkler system pulsing in the night air. The Hound paused, quivering. 
+
+           No! Montag held to the window sill. This way! Here!<br><br>
+
+           The procaine needle flicked out and in, out and in. A single clear drop of the stuff of dreams fell from the needle as it vanished 
+
+           in the Hound's muzzle.<br><br>
+
+			Montag held his breath, like a doubled fist, in his chest.The Mechanical Hound turned and plunged away from Faber's house down the alley again. 
+
+        </div>	
+
+    </div>
+
+       
+
+    <!-- Page 5 -->
+
+    <div id="page-5" class="page hidden" data-0="opacity:0;display:none" data-22500="opacity:0;display:block" data-23000="display:block;opacity:1"  data-27500="display:block;" data-28000="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page5.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page5-cover.png">
+
+        </div>
+
+    	<div class="bg bg-cover" id="page5-light">
+
+        	<img src="images/page5-1.png">
+
+        </div>
+
+        <div id="page5-txt" class="txt-format" data-23000="top:0px;" data-27500="">
+
+          	Montag snapped his gaze to the sky. The helicopters were closer, a great blowing of insects to a single light source.<br><br>
+
+          	With an effort, Montag reminded himself again that this was no fictional episode to be watched on his run to the river;  
+
+          	it was in actuality his own chess-game he was witnessing, <br><br>
+
+           	move<br>
+
+            by<br>
+
+            move. 
+
+        </div>	
+
+    </div> 
+
+    
+
+    
+
+    <!-- Page 6 -->
+
+    <div id="page-6" class="page hidden" data-0="opacity:0;display:none" data-27500="opacity:0;display:block" data-28000="display:block;opacity:1" data-32500="display:block;" 
+
+  data-33000="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page6.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page6-cover.png">
+
+        </div>
+
+    	<div class="bg bg-cover" data-28000="margin-top:40px" data-32000="margin-top:0px">
+
+        	<img src="images/page6-1.png">
+
+        </div>
+
+        <div id="page6-txt" class="txt-format" data-28000="top:0px;" data-32500="">
+
+          	He shouted to give himself the necessary push away from this last house window, and the fascinating seance going on in there!<br><br>
+
+            Hell! and he was away and gone! The alley, a street, the alley, a street, and the smell of the river. Leg out, leg down, leg out 
+
+            and down. Twenty million Montags running, soon, if the cameras caught him. Behind him now twenty million silently baying Hounds 
+
+            ricocheted across parlours, three-cushion shooting from right wall to centre wall to left wall, gone, right wall, centre wall, 
+
+            left wall, gone! Montag jammed his Seashell to his ear.
+
+        </div>	
+
+    </div>  
+
+    
+
+    <!-- Page 7 -->
+
+    <div id="page-7" class="page hidden" data-0="opacity:0;display:none" data-32500="opacity:0;display:block" data-33000="display:block;opacity:1"  data-38000="display:block;" data-38500="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page7.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page7-cover.png">
+
+        </div>
+
+    	<div class="bg bg-cover" data-33000="margin-left:-250px; margin-top: 150px" data-38000="margin-left:0px; margin-top: 0px">
+
+        	<img src="images/page7-1.png">
+
+        </div>
+
+        <div id="page7-txt" class="txt-format" data-33000="top:0px;" data-38000="">
+
+          	Police suggest entire population in the Elm Terrace area do as follows: Everyone in every house in every street open a 
+
+            front or rear door or look from the windows. The fugitive cannot escape if everyone in the next minute looks from his house.  
+
+            Ready! " Of course! Why hadn't they done it before! Why, in all the years, hadn't this game been tried! Everyone up, 
+
+            everyone out! He couldn't be missed! The only man running alone in the night city, the only man proving his legs! 
+
+            "At the count of ten now!<br><br>
+
+
+
+            One!<br><br>
+
+             
+
+            Two!<br><br>
+
+            He felt the city rise. Three.<br>
+
+            He felt the city turn to its thousands of doors. <br>
+
+            Faster! Leg up, leg down !<br>
+
+            "Four ! "<br>
+
+            The people sleepwalking in their hallways.<br>
+
+            "Five! " <br>
+
+            He felt their hands on the doorknobs!
+
+        </div>	
+
+    </div>
+
+    
+
+    <!-- Page 8 -->
+
+    <div id="page-8" class="page hidden" data-0="opacity:0;display:none" data-38000="opacity:0;display:block" data-38500="opacity:1;" data-39500="top:0px;" data-43500="top:-900px;"  data-44000="display:block;" data-45000="display:none;">    	
+
+        <div class="static-bg page8-bg" >
+
+            <img src="images/page8.jpg" class="img-full">
+
+        </div>
+
+        <div id="ball" >
+
+            <img src="images/ball.png">
+
+        </div>
+
+        <div id="page8-txt-1" class="txt-format-1" data-0="opacity:0;" data-39000="opacity:0; margin-top: 100px" data-39500="opacity:1;  margin-top: 0px" data-40500="margin-top:-300px;" data-40700="opacity:0;">
+
+        	The smell of the river was cool and like a solid rain. His throat was burnt rust and his eyes were wept 
+
+            dry with running. He yelled as if this yell would jet him on, fling him the last hundred yards.            
+
+        </div>    
+
+        <div id="page8-txt-2" class="txt-format-1" data-40000="opacity:0; margin-top: 100px" data-40500='opacity:1;margin-top: 0px' data-43000='opacity:1;margin-top:-250px'  data-43200="opacity:0;">
+            6...7...8...<br><br>
+
+            The <br>
+
+            doorknobs <br>
+
+            turned <br>
+
+            on five <br>
+
+            thousand <br>
+
+            doors.<br>
+
+        </div>   
+
+        <div id="page8-txt-3" class="txt-format-1" data-41500="opacity:0; margin-top: 100px" data-42000='opacity:1; margin-top: 0px' data-43000='opacity:1; margin-top: -300px;' data-43500='opacity:0; margin-top: -500px; opacity:0;' > 
+
+            9
+
+            <br><br>
+
+            He ran out away from the <br>
+
+            last row of houses, on a <br>
+
+            slope leading down to a solid <br>
+
+            moving blackness. 
+
+        </div>
+
+        <div id="page8-txt-4" class="txt-format-1" data-42000="opacity:0; margin-top: 100px" data-42500="opacity:1;  margin-top:0px" data-43500='opacity:1; margin-top: -300px' data-44500='opacity:0; margin-top: -500px'  data-44700="opacity:0;"> 
+
+            10
+
+            <br>
+
+            doors opened.
+
+        </div>
+
+    	
+
+    </div>
+
+    <div id="page-8-header" class="hidden" data-0="opacity:0;display:none;" data-37000="opacity:0;display:block;" data-38500="opacity:1;display:block;" data-43000="display:block;opacity:1;" data-45000="display:none; opacity:0;">
+
+    	<img src="images/page8-cover-t.png" class="img-full">    
+
+    </div>
+
+    <div id="page-8-footer" class="hidden" data-0="opacity:0;display:none;" data-37000="opacity:0;display:block;" data-38500="opacity:1;display:block;" data-43000="display:block;opacity:1;" data-45000="display:none; opacity:0;">
+
+    	<img src="images/page8-cover-b.png" class="img-full">    
+
+    </div>
+
+    
+
+    <!-- Page 9-->
+
+    <div id="page-9" class="page hidden" data-0="opacity:0;display:none" data-44500="opacity:0;display:block" data-45000="display:block;opacity:1"  data-49000="display:block;" data-49500="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page9.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page9-cover.png">
+
+        </div>
+
+        <div id="page9-txt" class="txt-format" data-45000="top:0px;" data-49000="">
+
+          	He imagined thousands on thousands of faces peering into yards, into alleys, and into the sky, 
+
+            faces hid by curtains, pale, night-frightened faces, like grey animals peering from electric 
+
+            caves, faces with grey colourless eyes, grey tongues and grey thoughts looking out through 
+
+            the numb flesh of the face.
+
+        </div>	
+
+    </div>
+
+    
+
+    <!-- Page 10-->
+
+    <div id="page-10" class="page hidden" data-0="opacity:0;display:none" data-49000="opacity:0;display:block" data-49500="display:block;opacity:1" data-53000="display:block;" data-53500="display:none;">
+
+    	<div class="bg">
+
+        	<img src="images/page10.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page10-cover.png">
+
+        </div>
+
+        <div id="page10-txt" class="txt-format" data-49500="top:0px;" data-53000="">
+
+        	<div class="static-txt">
+
+          		He touched it, just to be sure it was real. He waded in and stripped in darkness to the skin, splashed his body, 
+
+                arms, legs, and head with raw liquor; drank it and snuffed some up his nose. Then he dressed in Faber's old 
+
+                clothes and shoes. He tossed his own clothing into the river and watched it swept away. Then, holding the 
+
+                suitcase, he walked out in the river until there was no bottom and he was swept away in the dark.
+
+            </div>
+
+        </div>	
+
+    </div>
+
+    
+
+    <!-- Page 11 -->
+
+    <div id="page-11" class="page hidden" data-0="opacity:0;display:none" data-53000="opacity:0;display:block" data-53500="opacity:1;" data-54500="top:0px;" data-58000="top:-900px;"  data-58500="display:block;" data-59000="display:none;">   	
+
+        <div class="static-bg page11-bg" >
+
+            <img src="images/page11.jpg" class="img-full">
+
+        </div>
+
+        <div id="page11-txt" class="txt-format" data-0="opacity:0;" data-54000="opacity:0;" data-54500="opacity:1; margin-top:0px;" data-58000="margin-top: -700px;">
+
+        	He was three hundred yards downstream when the Hound reached the river. Overhead the great racketing fans of 
+
+            the helicopters hovered. A storm of light fell upon the river and Montag dived under the great illumination 
+
+            as if the sun had broken the clouds. He felt the river pull him further on its way, into darkness.         
+
+        </div>   
+
+    </div>
+
+    <div id="page-11-footer" class="hidden" data-0="opacity:0;display:none;" data-53000="opacity:0;display:block;" data-53500="opacity:1;display:block;" data-56500="opacity:1;display:block;" data-58500="opacity:0;display:none;">
+
+    	<img src="images/page11-cover.png" class="img-full">    
+
+    </div>
+
+    
+
+     <!-- Page 12 -->
+
+    <div id="page-12" class="page hidden" data-0="opacity:0;display:none" data-58000="opacity:0;display:block" data-58500="display:block;opacity:1">
+
+    	<div class="bg">
+
+        	<img src="images/page12.jpg">
+
+        </div>
+
+    	<div class="bg bg-cover">
+
+        	<img src="images/page12-cover.png">
+
+        </div>
+
+        <div id="page12-txt" class="txt-format" data-59500="" data-60000="" data-64000="">
+
+          	Then the lights switched back to the land, the helicopters swerved over the city again, as if they had picked up another trail.<br><br>
+
+            
+
+            They were gone. The Hound was gone. Now there was only the cold river and Montag floating in a sudden 
+
+            peacefulness, away from the city and the lights and the chase, <br><br>
+
+
+
+            away <br>
+
+            from <br>
+
+            everything.<br><br>
+
+            
+
+        </div>	
+
+            <ul id="links" class="ul-no-style" data-0="display:none" data-63000="display:block;opacity:0" data-63500="display:block;opacity:1">
+
+            	<li class="pull-left"><a href="http://twitter.com/home?status= Currently Reading http://pleasuretoburn.com/" title="Click to share this post on Twitter"><img src="images/twitter.png"></a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+            	<li class="pull-left"><a href="http://lifebloodagency.com/pleasuretoburn"><img src="images/more.png"></a></li>
+
+            </ul>
+
+    </div>
+
+    
+
+    
+
+    <div id="tmp-txt" class="txt-format"></div>
+
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+
+    
 
 </body>
+
 </html>
